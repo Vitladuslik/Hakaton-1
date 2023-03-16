@@ -3,5 +3,30 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
+    <changeSet id="createTable" author="hillel">
+        <createTable tableName="restaurants">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="city" type="VARCHAR(255)"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="estimatedCost" type="int"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="averageRating" type="VARCHAR(255)"/>
+            <column name="votes" type="int"/>
+            <column name="id" type="int"/>
 
+        </createTable>
+    </changeSet>
+
+    <changeSet id="createTable" author="hillel">
+        <createTable tableName="vote">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="rating" type="int"/>
+            <column name="comment" type="VARCHAR(255)"/>
+            <column name="restaurantId" type="int"/>
+        </createTable>
+    </changeSet>
 </databaseChangeLog>
