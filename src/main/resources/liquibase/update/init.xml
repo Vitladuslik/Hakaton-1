@@ -14,7 +14,6 @@
             <column name="name" type="VARCHAR(255)"/>
             <column name="averageRating" type="VARCHAR(255)"/>
             <column name="votes" type="int"/>
-            <column name="id" type="int"/>
 
         </createTable>
     </changeSet>
