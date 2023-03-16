@@ -1,8 +1,20 @@
 package com.template.entities;
 
-public class Vote {
+import lombok.Getter;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
-    Integer id;
+import javax.persistence.*;
+
+@Getter
+@Setter
+@Entity
+@Accessors(chain = true)
+@Table(name = "vote")
+public class Vote {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    Long id;
     Integer rating;
     String comment;
     Integer restaurantId;
