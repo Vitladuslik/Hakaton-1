@@ -35,25 +35,25 @@ public class TestController {
         return "work - OK";
     }
 
-    @GetMapping("/GETBYCITY")
+    @GetMapping("/restaurant/query?city={city}")
     public String getByCity() {
         log.info(String.format(CALL_ENDPOINT, "ping"));
         return "work - OK";
     }
 
-    @GetMapping("/GETBYID")
+    @GetMapping("/restaurant/query?id={id}")
     public String getById() {
         log.info(String.format(CALL_ENDPOINT, "ping"));
         return "work - OK";
     }
 
-    @GetMapping("/DELETE")
+    @GetMapping("/restaurant/{id}")
     public String delete() {
         log.info(String.format(CALL_ENDPOINT, "ping"));
         return "work - OK";
     }
 
-    @GetMapping("/SORT")
+    @GetMapping("/restaurant/sort")
     public String sort() {
         log.info(String.format(CALL_ENDPOINT, "ping"));
         return "work - OK";
