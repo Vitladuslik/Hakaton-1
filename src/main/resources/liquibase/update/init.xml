@@ -25,7 +25,10 @@
             </column>
             <column name="rating" type="int"/>
             <column name="comment" type="VARCHAR(255)"/>
-            <column name="restaurantId" type="int"/>
+            <column name="restaurantId" type="int">
+                <constraints nullable="false" foreignKeyName="fk_vote_restaurants" references="restaurants(id)"/>
+            </column>
+
         </createTable>
     </changeSet>
 </databaseChangeLog>
