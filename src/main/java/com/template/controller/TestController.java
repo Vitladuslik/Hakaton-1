@@ -17,20 +17,14 @@ public class TestController {
 
     private static final String CALL_ENDPOINT = "call endpoint : %s ";
 
-    @GetMapping("/ping")
-    public String ping() {
+    @GetMapping("/UPDATE")
+    public String update() {
         log.info(String.format(CALL_ENDPOINT, "ping"));
         return "work - OK";
     }
 
-    @GetMapping("/POST")
-    public String post() {
-        log.info(String.format(CALL_ENDPOINT, "ping"));
-        return "work - OK";
-    }
-
-    @GetMapping("/PUT")
-    public String put() {
+    @GetMapping("/restaurant")
+    public String addRestaurant() {
         log.info(String.format(CALL_ENDPOINT, "ping"));
         return "work - OK";
     }
@@ -41,8 +35,14 @@ public class TestController {
         return "work - OK";
     }
 
-    @GetMapping("/GET")
-    public String get() {
+    @GetMapping("/GETBYCITY")
+    public String getByCity() {
+        log.info(String.format(CALL_ENDPOINT, "ping"));
+        return "work - OK";
+    }
+
+    @GetMapping("/GETBYID")
+    public String getById() {
         log.info(String.format(CALL_ENDPOINT, "ping"));
         return "work - OK";
     }
