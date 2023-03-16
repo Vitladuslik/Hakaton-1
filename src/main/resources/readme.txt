@@ -51,11 +51,11 @@ The following APIs need to be implemented:
 
 
 - Adding a new restaurant - POST request should be created to add a new restaurant. The API endpoint would be /restaurant. The request body contains the details of the restaurant. HTTP response should be 201.
-
+//Vitaliy
 - Updating restaurant rating - averageRating and votes can be updated by PUT request to endpoint /restaurant/{id}. The request body would contain averageRating and votes.
-
+//Vitaliy
 - Getting all restaurants - GET request to endpoint /restaurant should return the entire list of restaurants. The HTTP response code should be 200.
-
+//Anna
 - Getting all restaurants in a particular city - GET request to endpoint /restaurant/query?city={city} should return the entire list of restaurants in that city. The HTTP response code should be 200.
 
 - Getting restaurant by id - GET request to endpoint /restaurant/query?id={id} should return the details of the restaurant with this unique id. The HTTP response code should be 200.
