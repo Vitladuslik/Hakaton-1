@@ -22,4 +22,41 @@ public class TestController {
         log.info(String.format(CALL_ENDPOINT, "ping"));
         return "work - OK";
     }
+
+    @GetMapping("/POST")
+    public String post() {
+        log.info(String.format(CALL_ENDPOINT, "ping"));
+        return "work - OK";
+    }
+
+    @GetMapping("/PUT")
+    public String put() {
+        log.info(String.format(CALL_ENDPOINT, "ping"));
+        return "work - OK";
+    }
+
+    @GetMapping("/GETALL")
+    public String getAll() {
+        log.info(String.format(CALL_ENDPOINT, "ping"));
+        return "work - OK";
+    }
+
+    @GetMapping("/GET")
+    public String get() {
+        log.info(String.format(CALL_ENDPOINT, "ping"));
+        return "work - OK";
+    }
+
+    @GetMapping("/DELETE")
+    public String delete() {
+        log.info(String.format(CALL_ENDPOINT, "ping"));
+        return "work - OK";
+    }
+
+    @GetMapping("/SORT")
+    public String sort() {
+        log.info(String.format(CALL_ENDPOINT, "ping"));
+        return "work - OK";
+    }
+
 }
